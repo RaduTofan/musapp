@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:maxHeight="40dp"
+    android:minHeight="40dp"
+    android:height="40dp">
+
+    <TextView
+        android:id="@+id/customSpinnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:height="40dp"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:maxHeight="40dp"
+        android:minHeight="40dp"
+        android:padding="5dp"
+        android:textSize="18dp" />
+</LinearLayout>

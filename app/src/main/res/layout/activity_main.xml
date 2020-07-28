@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient4"
+    android:id="@+id/id_LayoutCreateSongs"
+    android:orientation="vertical"
+    tools:context=".FormularActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/model"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/TipModel" />
+
+        <TextView
+            android:id="@+id/idTextViewConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutImprov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_note"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/imageAddPrimersImprov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_input_add"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/playMelodyImprov"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="playMelodyImprov"
+                    app:srcCompat="@drawable/play" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_NoteImprov1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers" />
+
+            <Spinner
+                android:id="@+id/spinner_NoteImprov2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_NoteImprov3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_NoteImprov4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_NoteImprov5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/backing_chords"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/imageAddBackingChords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_input_add"
+                    android:src="@android:drawable/ic_input_add" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_ChordsImprov1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Chords" />
+
+            <Spinner
+                android:id="@+id/spinner_ChordsImprov2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Chords"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_ChordsImprov3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Chords"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_ChordsImprov4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Chords"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_ChordsImprov5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Chords"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nr_outputs"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_NrOutPutImprov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/NrOutputs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutElse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nr_steps" />
+
+            <Spinner
+                android:id="@+id/spinner_stepsElse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/NrSteps" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_note" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_NoteElse1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Primers" />
+
+                <ImageButton
+                    android:id="@+id/imageAddPrimersElse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_input_add"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/playMelodyElse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="playMelodyElse"
+                    app:srcCompat="@drawable/play" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_NoteElse2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_NoteElse3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_NoteElse4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_NoteElse5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Primers"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nr_outputs" />
+
+            <Spinner
+                android:id="@+id/spinner_NrOutPutElse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/NrOutputs" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="magic"
+            android:text="@string/make_the_magic_happen"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/button_bg"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333334">
+
+        <ImageView
+            android:id="@+id/idImgViewLibraryCreateSongMain"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/idImgViewCreateCreateSongMain"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
